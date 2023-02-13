@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:nosso_primeiro_projeto/eventos.dart';
+import 'package:nosso_primeiro_projeto/screen/eventos.dart';
 
 class Menu extends StatefulWidget{
 
@@ -46,7 +46,7 @@ class _Menu extends State<Menu>{
             leading: Icon(Icons.calendar_month),
             title: Text("Eventos"),
             subtitle: Text("Lista de eventos"),
-            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => const Eventos()));}
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => const Eventos(),));}
           ),
 
           SizedBox(height: MediaQuery.of(context).size.height * 0.37,),
