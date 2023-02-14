@@ -33,7 +33,8 @@ class _MinhaContaState extends State<MinhaConta> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Gildemar Diniz"),
+                  Text("Gildemar Diniz",style: TextStyle(fontWeight:FontWeight.bold,fontSize: 16)),
+                  SizedBox(height: 10,),
                   Text("gildemardiniz@gmail.com"),
                 ],
               )
@@ -57,8 +58,16 @@ class _MinhaContaState extends State<MinhaConta> {
           title: Text("Senha"),
           trailing: Icon(Icons.arrow_forward),
         ),
+        const ListTile(
+          title: Text("Eventos"),
+        ),
+        const ListTile(
+          leading: Icon(Icons.qr_code_2),
+          title: Text("Leitor QR code"),
+          trailing: Icon(Icons.arrow_forward),
+        ),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.3,
+          height: MediaQuery.of(context).size.height * 0.1,
         ),
         Divider(),
         const ListTile(

@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:nosso_primeiro_projeto/screen/eventos.dart';
+import 'package:green_berets/screen/eventos.dart';
+
+import '../screen/eventos.dart';
 
 class Menu extends StatefulWidget{
 

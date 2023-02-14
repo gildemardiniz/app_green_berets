@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nosso_primeiro_projeto/screen/conta.dart';
-import 'package:nosso_primeiro_projeto/screen/eventos.dart';
-import 'package:nosso_primeiro_projeto/screen/home.dart';
-import 'package:nosso_primeiro_projeto/screen/recrutamento.dart';
+import 'package:green_berets/screen/conta.dart';
+import 'package:green_berets/screen/eventos.dart';
+import 'package:green_berets/screen/home.dart';
+import 'package:green_berets/screen/recrutamento.dart';
 
 import 'widgets/menu.dart';
 
@@ -53,8 +53,58 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //centerTitle: true,
         title: Text(_titles[_indiceAtual].toString()),
+        actions: [
+          Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(8),
+                  child:
+                  PopupMenuButton(
+                      icon: Icon(Icons.notifications,size: 30,),
+                      itemBuilder:(context)=>[
+                        PopupMenuItem(child:
+                            Wrap(
+                              spacing:4,
+                              children: [
+                                Icon(Icons.new_releases_rounded,color: Colors.red),
+                                Text("Novo recruta"),
+                              ],
+                            ),
+                        ),
+                        PopupMenuItem(child:
+                        Wrap(
+                          spacing:4,
+                          children: [
+                            Icon(Icons.new_releases_rounded,color: Colors.red),
+                            Text("Novo evento"),
+                          ],
+                        ),
+                        )
+                      ]),
+                ),
+                Positioned(
+                    right: 20,
+                    top: 6,
+                    child: Container(
+                      padding: EdgeInsets.all(3),
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      constraints: BoxConstraints(
+                        minWidth: 10,
+                        minHeight: 10,
+                      ),
+                      child: Text(
+                        "5",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white, fontSize: 10),
+                      ),
+                    ))
+              ],
+            ),
+        ],
       ),
       body: _telas[_indiceAtual],
       bottomNavigationBar: BottomNavigationBar(

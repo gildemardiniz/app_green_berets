@@ -21,8 +21,19 @@ class _EventosState extends State<Eventos> {
         Divider(),
         exibirEvento(),
       ],
-    ));
+    ),
+        floatingActionButton: FloatingActionButton.extended(
+          icon: Icon(Icons.add_circle_outline),
+          onPressed: () {  },
+          label: Text("Novo Evento"),
+
+
+
+        )
+    );
   }
+
+
 
   Widget exibirEvento() {
     return InkWell(
