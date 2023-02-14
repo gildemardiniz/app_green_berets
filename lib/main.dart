@@ -47,7 +47,7 @@ class _MainPageState extends State<MainPage> {
   ];
 
   final List<String> _titles =[
-    "Green Berets",
+    "Green Berets Airsoft",
     "Eventos",
     "Recrutamento",
     "Minha Conta",
@@ -62,7 +62,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar:
           AppBar(
-          centerTitle: true,
+          //centerTitle: true,
           title: Text(_titles[_indiceAtual].toString()),
         ),
 

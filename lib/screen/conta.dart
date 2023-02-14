@@ -44,19 +44,26 @@ class _MinhaContaState extends State<MinhaConta> {
         const ListTile(
           title: Text("Conta"),
         ),
-        ListTile(
+        const ListTile(
           leading: Icon(Icons.account_circle),
           title: Text("Meu perfil"),
           trailing: Icon(Icons.arrow_forward),
         ),
-        Divider(),
-        ListTile(
+        const ListTile(
           title: Text("Segurança"),
         ),
-        ListTile(
+        const ListTile(
           leading: Icon(Icons.password),
           title: Text("Senha"),
           trailing: Icon(Icons.arrow_forward),
+        ),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.3,
+        ),
+        Divider(),
+        const ListTile(
+          leading: Icon(Icons.logout),
+          title: Text("Sair"),
         ),
       ]),
     );
