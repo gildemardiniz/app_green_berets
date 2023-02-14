@@ -1,16 +1,17 @@
-# app_green_berets
+# :gun: Green Berets Airsoft APP.
 
-A new Flutter project.
+Aplicativo em densenvolvimento para a equipe de airsoft Green Berets com finalidade de :
 
-## Getting Started
+1. Cadastrar integrantes da equipe.
+2. Cadastrar recrutas (Novos prospectos).
+3. Cadastrar Eventos.
+4. Realizar gestão de eventos:
+- Cadastrar participantes no eventos.
+- Validação de presença do participante através de Qr code.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## :computer: Técnologias utilizadas.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Dart
+- Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
